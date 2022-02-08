@@ -22,7 +22,7 @@ module.exports = async function main(mainurl, cachebool, debugbool) {
     html_main = await fetch(mainurl, html_main, debugbool);
     discussionname = await name(html_main, debugbool);
     topdiscussions = await top5(html_main, debugbool);
-    discussionpages = await pages(html_main, debugbool);
+    discussionpages = await pages(mainurl, html_main, debugbool);
     var id = discussionpages[discussionpages.length - 1].split('/').pop().split('?')[0];
 
     for (let i = 0; i < discussionpages.length; i++) {
