@@ -39,7 +39,7 @@ Thank you!
 const scrape = require('./scraper/scraper-index.js');
 var debugbool = true; // toggle debug logging in the console
 var cachebool = true; // if true will genorate a cache.json which stores output
-var discussiontofetch = 'https://musescore.com/groups/4489841/discuss/5122622';
+var discussiontofetch = 'https://musescore.com/groups/4489841/discuss/5125880';
 const indexmain = async function() {
 let discussion = await scrape(discussiontofetch, cachebool, debugbool);
 
