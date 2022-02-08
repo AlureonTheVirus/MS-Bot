@@ -1,3 +1,13 @@
+ alpha 1.0.02 -- 2/8/2022 - (An hour or two later...)
+- fixed bug where single page discussions would not be scraped as there is no 'last' tag on the page
+- updated repo
+
+TODO:
+ - fetch comment content from DMs for 1-1 interaction
+ - bot functionality (as of now it can only read data, it needs to be able to respond)
+ - revize/clean/optimize scraper 
+
+------------------------------------------------------------------------------------------------------------------
 1st alpha release! (alpha 1.0.01) -- 2/8/2022
 - implimented the scrape function, which pulls as much useful data from a discussion page as it can.
 - added LICENSE, readme.md, and the changelog.
@@ -6,9 +16,4 @@
 
 devnote: Scrape() took me about a week and is nowhere near finished, it needs a lot of optimization 
 and will definately be revized with coming updates. Scrape() relies on the puppeteer.js and cheerio modules to run.
-
-TODO:
- - fetch comment content from DMs for 1-1 interaction
- - bot functionality (as of now it can only read data, it needs to be able to respond)
- - revize/clean/optimize scraper 
 
