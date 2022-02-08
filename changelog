@@ -1,0 +1,8 @@
+1st alpha release! (alpha 1.0.01) -- 2/8/2022
+- implimented the scrape function, which pulls as much useful data from a discussion page as it can.
+- added LICENSE, readme.md, and the changelog.
+- improved readability of source (it's still terrible code, sorry in advance to anybody who wants to try and figure it out.)
+- updated repo
+
+devnote: Scrape() took me about a week and is nowhere near finished, it needs a lot of optimization 
+and will definately be revized with coming updates. Scrape() relies on the puppeteer.js and cheerio modules to run.
