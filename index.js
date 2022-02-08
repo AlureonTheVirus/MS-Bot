@@ -36,20 +36,20 @@ Thank you!
 
   */
 
-const scrape = require('./scraper/scraper-index.js');
-var debugbool = true; // toggle debug logging in the console
-var cachebool = true; // if true will genorate a cache.json which stores output
-var discussiontofetch = 'https://musescore.com/groups/4489841/discuss/5125880';
-const indexmain = async function() {
-let discussion = await scrape(discussiontofetch, cachebool, debugbool);
-
-/* As an example, this script fetches the content of this program's announcement discussion.
-the scraped content is parsed and pushed to an object, the data that is is scraped goes as follows:
-Name of the discussion, id of the discussion, the discussion link, all of the comments, and the top 5 discussions
-found in the sidebar of the discussion. */
-
- console.log(await discussion); 
- 
-}
-
-indexmain();
+  const scrape = require('./scraper/scraper-index.js');
+  var debugbool = true; // toggle debug logging in the console
+  var cachebool = true; // if true will generate a cache.json which stores output
+  var discussiontofetch = 'https://musescore.com/groups/4489841/discuss/5125880';
+  const indexmain = async function() {
+  let discussion = await scrape(discussiontofetch, cachebool, debugbool);
+  
+  /* As an example, this script fetches the content of this program's announcement discussion.
+  the scraped content is parsed and pushed to an object, the data that is is scraped goes as follows:
+  Name of the discussion, id of the discussion, the discussion link, all of the comments, and the top 5 discussions
+  found in the sidebar of the discussion. */
+  
+   console.log(await discussion); 
+   
+  }
+  
+  indexmain();
