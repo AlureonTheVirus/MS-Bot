@@ -6,3 +6,9 @@
 
 devnote: Scrape() took me about a week and is nowhere near finished, it needs a lot of optimization 
 and will definately be revized with coming updates. Scrape() relies on the puppeteer.js and cheerio modules to run.
+
+TODO:
+ - fetch comment content from DMs for 1-1 interaction
+ - bot functionality (as of now it can only read data, it needs to be able to respond)
+ - revize/clean/optimize scraper 
+
