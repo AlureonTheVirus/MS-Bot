@@ -9,19 +9,18 @@ module.exports = async function getcomments(html_main, debugbool) {
     // each entry in 'comments' follows the format [<op>, <content>],.
     let comments = [];
     let comment = [];
-
+    let comment_id;
     $('article').find('div', '._13XTP _1eJPh GgVyz').each(function(index, element) {
         if ($(element).contents().text() !== '') {
             comment.push($(element).contents().text());
+            comment_id = String($(element).parent().attr('id')).slice(8);
         } else {
             if (debugbool) console.log("adding comment content to variable...");
-            comment.push($(element).parent().attr('id').slice(8));
+            comment.push(comment_id);
             comments.push(comment);
             comment = [];
         }
     });
-
-
 
     comments.shift();
     return comments;
