@@ -1,5 +1,6 @@
- alpha 1.0.02 -- 2/8/2022 - (An hour or two later...)
+ alpha 1.00.01 -- 2/8/2022 - (An hour or two later...)
 - fixed bug where single page discussions would not be scraped as there is no 'last' tag on the page
+- fixed bug where comment ids were shifted within the array and generated malformed urls
 - updated repo
 
 TODO:
@@ -8,7 +9,7 @@ TODO:
  - revize/clean/optimize scraper 
 
 ------------------------------------------------------------------------------------------------------------------
-1st alpha release! (alpha 1.0.01) -- 2/8/2022
+1st alpha release! (alpha 1.00.00) -- 2/8/2022
 - implimented the scrape function, which pulls as much useful data from a discussion page as it can.
 - added LICENSE, readme.md, and the changelog.
 - improved readability of source (it's still terrible code, sorry in advance to anybody who wants to try and figure it out.)
